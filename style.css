@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #a79a8e 0%, #7e7e82 40%, #2c241d 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow: hidden;
+}
+
+.player-card {
+    width: 340px;
+    background: rgba(28, 25, 23, 0.75);
+    backdrop-filter: blur(25px) saturate(120%);
+    border-radius: 50px;
+    padding: 35px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: left;
+}
+
+.album-art {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.album-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.song-title {
+    color: #ffffff;
+    font-size: 22px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.artist-name {
+    color: #b0aca6;
+    font-size: 17px;
+    margin: 4px 0 25px 0;
+    font-weight: 400;
+}
+
+.progress-bar {
+    height: 5px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.progress-filled {
+    width: 25%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.progress-knob {
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 25%;
+}
+
+.time-stamp {
+    display: flex;
+    justify-content: flex-end;
+    color: #b0aca6;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-btn {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    cursor: pointer;
+}
